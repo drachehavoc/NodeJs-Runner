@@ -38,4 +38,4 @@ const addProcess = (title: string, command: string, ...options: string[]) => {
 }
 
 addProcess("Ping no Google", "ping", "google.com");
-addProcess("Ping no Google", "ping", "facebook.com");
+addProcess("Ping no Facebook", "ping", "facebook.com");

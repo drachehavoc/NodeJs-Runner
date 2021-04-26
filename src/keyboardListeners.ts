@@ -16,6 +16,11 @@ stdin.on("keypress", (c, key) => {
         return;
     }
 
+    if (key.name == "backspace") {
+        TerminalWindow.currentWindow.panel.toggleFixedScroll();
+        return;
+    }
+
     if (key.name == "return" && TerminalWindow.currentWindow instanceof TerminalWindowMenu) {
         TerminalWindow.currentWindow.panel.selectCurretOption();
         return;
